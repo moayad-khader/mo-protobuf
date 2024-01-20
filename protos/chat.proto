@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+
+
+message User {
+  string user_name = 1;
+  bool active = 2;
+}
+
+message Message {
+  int32 id = 1;
+
+  int32 conversation_id = 2;
+
+  string body = 3;
+
+  User user = 4;
+
+
+}
